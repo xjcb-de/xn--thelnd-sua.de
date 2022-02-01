@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>THE LÆND</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <style>
+            @font-face {
+                font-family: Avenir Next LT W01 Bold;
+                src:url("avenir-next-bold.woff2") format("woff2"), url("avenir-next-bold.woff") format("woff");
+            }
+            body {
+                background-color: #001e49;
+                display: flex;
+                flex-wrap: wrap-reverse;
+                justify-content: space-between;
+                align-items: center;
+            }
+            button {
+                font-family: Avenir Next LT W01 Bold;
+                color: #002e62;
+                background-color: white;
+                border: none;
+                padding: 0.5em;
+                margin: 1em;
+                font-weight: bold;
+                font-size: large;
+            }
+            @media (min-width: 1280px) {
+                img {
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            #mobileHeader {display:none}
+            @media (max-width: 600px) {
+                #header {display:none}
+                #mobileHeader {display: initial}
+                button {font-size: revert; margin-top: 1.75em; margin-bottom: 1.75em}
+            }
+        </style>
+    </head>
+    <body>
+        <img id="header" src="headline.svg">
+        <img id="mobileHeader" src="headline-mobile.svg">
+        <a href="sticker.html" target="_blank"><button type="button">THE LÆND Sticker ➞</button></a>
+    </body>
+</html>
